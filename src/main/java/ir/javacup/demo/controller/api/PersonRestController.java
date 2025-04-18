@@ -1,6 +1,6 @@
-package ir.javacup.demo.controller;
+package ir.javacup.demo.controller.api;
 
-import ir.javacup.demo.controller.api.PersonSaveRequest;
+import ir.javacup.demo.domain.api.PersonSaveRequest;
 import ir.javacup.demo.domain.api.PersonSaveResponse;
 import org.springframework.web.bind.annotation.RestController;
 
