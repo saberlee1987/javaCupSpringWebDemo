@@ -1,5 +1,6 @@
 package ir.javacup.demo.config;
 
+import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
 import org.springframework.beans.factory.annotation.Value;
@@ -15,6 +16,7 @@ public class OpenApiConfig {
             @Value(value = "${service.swagger.description}") String swaggerDescription
     ) {
         return new OpenAPI()
+                .components(new Components())
                 .info(new Info().title(swaggerTitle)
                         .version(swaggerVersion)
                         .description(swaggerDescription));

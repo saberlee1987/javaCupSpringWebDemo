@@ -26,9 +26,9 @@ spring:
         format_sql: true
 
 service:
-  baseUrl: "/services/javaCupDemo"
+  baseUrl: /services/javaCupDemo
   swagger:
-    version: 'version1.0.0-1404/01/29'
+    version: 'version1.1.0-1404/02/05'
     title: 'javaCupDemo server'
     description: 'javaCupDemo server'
 
